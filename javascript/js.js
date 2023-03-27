@@ -107,15 +107,28 @@ modal.addEventListener('click', (e) => {
     }
 });
 // txt
+function hm(){
+    document.getElementById("ks-txt").style.display='none';
+    document.getElementById("ms-txt").style.display='none';
+    document.getElementById("pc-txt").style.display='none';
+    document.getElementById("hm-txt").style.display='block';
+}
 function ksp(){
+    document.getElementById("hm-txt").style.display='none';
+    document.getElementById("ms-txt").style.display='none';
+    document.getElementById("pc-txt").style.display='none';
     document.getElementById("ks-txt").style.display='block';
 }
 function mpc(){
+    document.getElementById("hm-txt").style.display='none';
+    document.getElementById("ms-txt").style.display='none';
+    document.getElementById("ks-txt").style.display='none';
     document.getElementById("pc-txt").style.display='block';
 }
 function ms(){
+    document.getElementById("hm-txt").style.display='none';
+    document.getElementById("ks-txt").style.display='none';
+    document.getElementById("pc-txt").style.display='none';
     document.getElementById("ms-txt").style.display='block';
 }
-
-
 
