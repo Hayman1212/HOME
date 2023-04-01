@@ -1,5 +1,5 @@
-// get the button by calling its name
 var btn = document.getElementById('totopBtn');
+// get the button by calling its name
 
 // get navigation by calling its name
 const nav = document.querySelector('.hovereffect-nav');
@@ -19,8 +19,8 @@ const waveTxt = document.querySelector('.bigtext_blogtext')
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {  
-    // when the user scroll down for 900px, show btn
-    if (document.body.scrollTop > 900 || document.documentElement.scrollTop > 900) {
+    // when the user scroll down for 880px, show btn
+    if (document.body.scrollTop > 880 || document.documentElement.scrollTop > 880) {
         btn.style.display = "block";
     } else {
         btn.style.display = "none";
@@ -28,7 +28,7 @@ function scrollFunction() {
 }
 
 
- // when the user scroll down for 700px, the background will turn white from transparent
+ // when the user scroll down for 650px, the background will turn white from transparent
  window.addEventListener('scroll', () => {
     if (window.scrollY > 650 ) {
         nav.classList.add('scroll-effect-nav');
@@ -71,64 +71,4 @@ function waveHoverout(){
 }
 
 
-
-
-// about page
-
-// Get the modal
-// "use strict"
-
-const modal = document.querySelector('.expand');
-// to select all the image
-const previews = document.querySelectorAll('.main-profile img');
-const original = document.querySelector('.expand-img');
-const caption = document.querySelector('.role');
-
-// function to run the image
-previews.forEach( preview => {
-    preview.addEventListener('click', () => {
-        modal.classList.add("open");
-        original.classList.add("open");
-        // Dynamic change text and image
-
-    // originalSrc= original source
-    const originalSrc = preview.getAttribute('data-original');
-    original.src = `../img/${originalSrc}`;
-    const altText = preview.alt;
-    caption.textContent = altText;
-  })
-})
-
-// e= event
-modal.addEventListener('click', (e) => {
-    if (e.target.classList.contains("expand")) {
-        modal.classList.remove("open");
-        original.classList.remove("open");
-    }
-});
-// txt
-function hm(){
-    document.getElementById("ks-txt").style.display='none';
-    document.getElementById("ms-txt").style.display='none';
-    document.getElementById("pc-txt").style.display='none';
-    document.getElementById("hm-txt").style.display='block';
-}
-function ksp(){
-    document.getElementById("hm-txt").style.display='none';
-    document.getElementById("ms-txt").style.display='none';
-    document.getElementById("pc-txt").style.display='none';
-    document.getElementById("ks-txt").style.display='block';
-}
-function mpc(){
-    document.getElementById("hm-txt").style.display='none';
-    document.getElementById("ms-txt").style.display='none';
-    document.getElementById("ks-txt").style.display='none';
-    document.getElementById("pc-txt").style.display='block';
-}
-function ms(){
-    document.getElementById("hm-txt").style.display='none';
-    document.getElementById("ks-txt").style.display='none';
-    document.getElementById("pc-txt").style.display='none';
-    document.getElementById("ms-txt").style.display='block';
-}
 
