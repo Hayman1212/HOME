@@ -2601,7 +2601,7 @@ ul.icon-ul-footer li:nth-child(4) a:before{
     
     /* about  */
     .profile-img-container img{
-        width: 88%;
+        width: 80%;
         height: 19vh;
     }
     .profile-img-container img:hover{
@@ -2635,6 +2635,13 @@ ul.icon-ul-footer li:nth-child(4) a:before{
     }
     .about-profile-container{
         margin-top: 60%;
+    }
+    .profile-img-container img{
+        width: 93%;
+        height: 22vh;
+    }
+    .profile-img-container img:hover{
+        height: 25vh;
     }
     
     /* .affirmation page */
@@ -2692,12 +2699,12 @@ ul.icon-ul-footer li:nth-child(4) a:before{
             margin-top: 0;
         }
     }
-    .profile-img-container img{
+    /* .profile-img-container img{
         height: 25vh;
     }
     .profile-img-container img:hover{
         height: 28vh;
-    }
+    } */
 
 
 }
@@ -2781,8 +2788,11 @@ ul.icon-ul-footer li:nth-child(4) a:before{
         top: 16%;
     }
 
+    .profile-img-container img{
+        height: 20vh;
+    } 
     .profile-img-container img:hover{
-        height: 18vh;
+        height: 22vh;
     } 
     .trust-positivediv{
         font: italic 6em serif;
@@ -2991,10 +3001,10 @@ ul.icon-ul-footer li:nth-child(4) a:before{
     }
     .profile-img-container img{
         width: 95%;
-        height: 24vh;
+        height: 22vh;
     }
     .profile-img-container img:hover{
-        height: 26vh;
+        height: 24vh;
     }
     /* relax page */
     .relax-text{
@@ -3042,13 +3052,13 @@ ul.icon-ul-footer li:nth-child(4) a:before{
     .about-profile-container{
         margin-top: 100%;
     } 
-    .profile-img-container img{
+    /* .profile-img-container img{
         width: 95%;
         height: 24vh;
     }
     .profile-img-container img:hover{
         height: 26vh;
-    }
+    } */
     .trust-positivediv{
         font: italic 5.5em serif;
     }
@@ -3093,6 +3103,13 @@ ul.icon-ul-footer li:nth-child(4) a:before{
     .about-profile-container{
         margin-top: 100%;
     }
+    .profile-img-container img{
+        width: 95%;
+        height: 21vh;
+    }
+    .profile-img-container img:hover{
+        height: 23vh;
+    } 
     
     .bigtext_forgive{
         font: italic 2.4em serif;
@@ -3119,10 +3136,10 @@ ul.icon-ul-footer li:nth-child(4) a:before{
     }
     .profile-img-container img{
         width: 95%;
-        height: 88vh;
+        height: 20vh;
     }
     .profile-img-container img:hover{
-        height: 92vh;
+        height: 22vh;
     }
     h1.h-aboutus{
         font: 4.5em serif;
@@ -3179,6 +3196,15 @@ ul.icon-ul-footer li:nth-child(4) a:before{
     }
 }
 
+@media (max-width: 992px){
+    .profile-img-container img{
+        width: 95%;
+        height: 17%;
+    }
+    .profile-img-container img:hover{
+        height: 19%;
+    }
+}
 @media (max-width: 950px){
     /* about page   */
     @keyframes animationAim{
@@ -3735,6 +3761,12 @@ ul.icon-ul-footer li:nth-child(4) a:before{
 @media (max-width: 480px){
     .about-profile-container{
         margin-top: 280%;
+    }    
+    .profile-img-container img{
+        height: 45%;
+    }
+    .profile-img-container img:hover{
+        height: 48%;
     }
     .bigtext_blogtext,.bigtext_hls{
         font: italic 1.8em serif;
@@ -3746,8 +3778,6 @@ ul.icon-ul-footer li:nth-child(4) a:before{
     
 }
 @media (max-width: 450px){
-    
-    
     
     /* about page   */
     .aboutProcess-headingDiv{
@@ -3797,6 +3827,12 @@ ul.icon-ul-footer li:nth-child(4) a:before{
     }
     .about-profile-container{
         margin-top: 310%;
+    }    
+    .profile-img-container img{
+        height: 42%;
+    }
+    .profile-img-container img:hover{
+        height: 45%;
     }
 
 }    
@@ -3843,6 +3879,12 @@ ul.icon-ul-footer li:nth-child(4) a:before{
     .relax-mood{ 
         font: italic 1.2em Serif;
         margin: 90% 0 0 0;
+    }   
+    .profile-img-container img{
+        height: 37%;
+    }
+    .profile-img-container img:hover{
+        height: 39%;
     }
 }
     
@@ -3857,6 +3899,12 @@ ul.icon-ul-footer li:nth-child(4) a:before{
     }
     .about-profile-container{
         margin-top: 550%;
+    } 
+    .profile-img-container img{
+        height: 32%;
+    }
+    .profile-img-container img:hover{
+        height: 35%;
     }
 }
 @media (max-width: 330px){
@@ -3864,6 +3912,12 @@ ul.icon-ul-footer li:nth-child(4) a:before{
     
     .aboutProcess-headingDiv{
         left: 56%;
+    }
+    .profile-img-container img{
+        height: 28%;
+    }
+    .profile-img-container img:hover{
+        height: 30%;
     }
 }
 @media (max-width: 300px){
@@ -3874,7 +3928,13 @@ ul.icon-ul-footer li:nth-child(4) a:before{
         left: 66%;
     }
     .about-profile-container{
-        margin-top: 700%;
+        margin-top: 720%;
+    }
+    .profile-img-container img{
+        height: 24%;
+    }
+    .profile-img-container img:hover{
+        height: 26%;
     }
     .bigtext_blogtext,.bigtext_hls{
         font: italic 1em serif;
@@ -3890,13 +3950,41 @@ ul.icon-ul-footer li:nth-child(4) a:before{
         font: italic 1.1em Serif;
     }
 }
-
+@media (max-width: 270px){
+    
+    .about-profile-container{
+        margin-top: 800%;
+    }
+}
 @media (max-width: 250px){
     /* about page  */
+    .about-profile-container{
+        margin-top: 920%;
+    }
     
     .aboutProcess-headingDiv{
         left: 73%;
     }
 
+    .profile-img-container img{
+        height: 16%;
+    }
+    .profile-img-container img:hover{
+        height: 18%;
+    }
 }
 
+
+@media (max-width: 237px){
+    /* about page  */
+    .about-profile-container{
+        margin-top: 1200%;
+    }
+}
+
+@media (max-width: 220px){
+    /* about page  */
+    .about-profile-container{
+        margin-top: 1400%;
+    }
+}
