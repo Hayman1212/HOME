@@ -386,7 +386,6 @@
                             <img 
                             id="hm" onclick="hm()" src="../images/hm-preview.jpg" 
                             class="rounded-circle mx-auto" alt=" Hayman Hnin Pwint Aung" 
-                           
                             data-original="../images/hayman.jpg">
                             <p class="my-1 mx-auto text-center " id="hayman"><br/>Founder</p>
                             <p class="text-indent col-12 d-block d-xxl-none d-xl-none d-lg-none my-5">
@@ -421,9 +420,7 @@
                             <p class="my-1 mx-auto text-center"  id="maypanchi"><br/>Yoga guide</p>
                             <p class="text-indent col-12 d-block d-xxl-none d-xl-none d-lg-none my-5">
                                 Hello, I am May Panchi who can help you to relax.  I have been yoga instructor for 3 years and I also used to make motivational speech. I can explain you about the meaning of life and I can tell you how to live happily or how to love yourself.  If you are having too much stress, you can open up freely to me. 
-                            </p>
-    
-                                                                                
+                            </p>                                                      
                         </div>
                          <!-- secondprofile -->
                         <div class="col-xxl-4 col-xl-4 col-lg-4 col-12 mx-auto px-auto col-md-12 col-12 mt-3 profile-img-container " id="mspk">
@@ -445,7 +442,7 @@
 
             <!-- modal image -->
             <div class="expand">
-                <img src="../images/hm.jpg" class="expand-img" alt="Expand the image when click on our profile" >
+                <img src="../images/hayman.jpg" class="expand-img" alt="Expand the image when click on our profile" >
                 <p class="role"></p>
             </div>
 
@@ -658,9 +655,70 @@
 
 
     <!-- link with javascript -->
-    <script src="../javascript/js.js"></script>
+    <script text="javascript">
+                
+        // about page
+
+        // Get the modal
+        // "use strict"
+
+        const modal = document.querySelector('.expand');
+        // to select all the image
+        const previews = document.querySelectorAll('.main-profile img');
+        const original = document.querySelector('.expand-img');
+        const caption = document.querySelector('.role');
+
+        // function to run the image
+        previews.forEach( preview => {
+            preview.addEventListener('click', () => {
+                modal.classList.add("open");
+                original.classList.add("open");
+                // Dynamic change text and image
+
+            // originalSrc= original source
+            const originalSrc = preview.getAttribute('data-original');
+            original.src = `../images/${originalSrc}`;
+            const altText = preview.alt;
+            caption.textContent = altText;
+        })
+        })
+
+        // e= event
+        modal.addEventListener('click', (e) => {
+            if (e.target.classList.contains("expand")) {
+                modal.classList.remove("open");
+                original.classList.remove("open");
+            }
+        });
+        // txt
+        function hm(){
+            document.getElementById("ks-txt").style.display='none';
+            document.getElementById("ms-txt").style.display='none';
+            document.getElementById("pc-txt").style.display='none';
+            document.getElementById("hm-txt").style.display='block';
+        }
+        function ksp(){
+            document.getElementById("hm-txt").style.display='none';
+            document.getElementById("ms-txt").style.display='none';
+            document.getElementById("pc-txt").style.display='none';
+            document.getElementById("ks-txt").style.display='block';
+        }
+        function mpc(){
+            document.getElementById("hm-txt").style.display='none';
+            document.getElementById("ms-txt").style.display='none';
+            document.getElementById("ks-txt").style.display='none';
+            document.getElementById("pc-txt").style.display='block';
+        }
+        function ms(){
+            document.getElementById("hm-txt").style.display='none';
+            document.getElementById("ks-txt").style.display='none';
+            document.getElementById("pc-txt").style.display='none';
+            document.getElementById("ms-txt").style.display='block';
+        }
+
+
+    </script>
     <!-- end link with javascript -->
-    <script type="text/javascript" src="../javascript/js.js"></script>
 
 </body>
 </html>

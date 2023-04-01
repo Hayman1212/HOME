@@ -92,7 +92,7 @@
                             </a>
                         </li>
                         <li class="nav-item mx-auto my-4 w-auto">
-                            <a class="nav-link" href="#contact-section">
+                            <a class="nav-link" href="../index.html#contact-section">
                                 Contact us
                             </a>
                         </li>
@@ -269,7 +269,21 @@
 
 
     <!-- link with javascript -->
-    <script src="../javascript/js.js"></script>
+    <!-- <script src="../javascript/js.js"></script> -->
+    <script>
+                
+        // get menu button by calling its name
+        const menuBtn = document.querySelector('.responsivenav-menubtn')
+
+         window.addEventListener('scroll', () => {
+            if (window.scrollY > 120 ) {
+                menuBtn.classList.add('menubtnScroll');
+            } else if (window.scrollY <= 120) {
+                menuBtn.classList.remove('menubtnScroll');
+            }
+        });
+
+    </script>
     <!-- end link with javascript -->
 
 </body>
