@@ -657,7 +657,51 @@
     <!-- link with javascript -->
     <script text="javascript">
                 
-        // about page
+        var btn = document.getElementById('totopBtn');
+        // get the button by calling its name
+
+        // get navigation by calling its name
+        const nav = document.querySelector('.hovereffect-nav');
+
+        // get menu button by calling its name
+        const menuBtn = document.querySelector('.responsivenav-menubtn')
+
+        // get menu button by calling its name
+        const navIcon = document.querySelector('.responsive-homeicon')
+
+        window.onscroll = function() {scrollFunction()};
+
+        function scrollFunction() {  
+            // when the user scroll down for 880px, show btn
+            if (document.body.scrollTop > 880 || document.documentElement.scrollTop > 880) {
+                btn.style.display = "block";
+            } else {
+                btn.style.display = "none";
+            }
+        }
+
+
+        // when the user scroll down for 700px, the background will turn white from transparent
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 650 ) {
+                nav.classList.add('scroll-effect-nav');
+                nav.classList.remove('hovereffect-nav');
+                menuBtn.classList.add('menubtnScroll');
+                navIcon.classList.add('d-none');
+            } else if (window.scrollY <= 650) {
+                nav.classList.remove('scroll-effect-nav');
+                nav.classList.add('hovereffect-nav');
+                menuBtn.classList.remove('menubtnScroll');
+                navIcon.classList.remove('d-none');
+            }
+        });
+
+
+        // on-click effect
+        function totopBtn(){
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
 
         // Get the modal
         // "use strict"
