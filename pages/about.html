@@ -681,14 +681,14 @@
         }
 
 
-        // when the user scroll down for 700px, the background will turn white from transparent
+        // when the user scroll down for 600px, the background will turn white from transparent
         window.addEventListener('scroll', () => {
-            if (window.scrollY > 650 ) {
+            if (window.scrollY > 600 ) {
                 nav.classList.add('scroll-effect-nav');
                 nav.classList.remove('hovereffect-nav');
                 menuBtn.classList.add('menubtnScroll');
                 navIcon.classList.add('d-none');
-            } else if (window.scrollY <= 650) {
+            } else if (window.scrollY <= 600) {
                 nav.classList.remove('scroll-effect-nav');
                 nav.classList.add('hovereffect-nav');
                 menuBtn.classList.remove('menubtnScroll');
