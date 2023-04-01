@@ -86,7 +86,7 @@ button.to-top-btn:active{
     color: black;
     font-size: 0.66em;
 }
-
+/* iconup-div */
 /* header */
 header#header, div.header-quote-div, #headerVideo{
     background: #FFD4E5;
@@ -3446,10 +3446,10 @@ ul.icon-ul-footer li:nth-child(4) a:before{
     .responsive-nav ul.responsive-ul{
         left: 65%;
     }
-    .iconup-div span{ 
+    /* .iconup-div span{ 
         padding: 25% 30%;
         margin: 0 3%;
-    }
+    } */
     .welcomeHome-headerHeading{
         font:  3em 'Cinzel', serif;
         top: 20%;
